@@ -1,0 +1,176 @@
+<!-- <main id="main" class="anchor">
+  
+
+      <section id="shopify-section-template--19455591383315__main" class="shopify-section shopify-section--main-collection"><style>
+  #shopify-section-template--19455591383315__main {
+    --product-list-horizontal-spacing-factor: 1;
+    --product-list-vertical-spacing-factor: 1;
+
+    
+    --collection-items-per-row-medium: 2;
+    --collection-items-per-row-large: 1;
+  }
+
+  #shopify-section-template--19455591383315__main .product-list {
+    --product-list-max-items-per-row-allowed: 99 !important; 
+  }
+
+  @media screen and (min-width: 700px) {
+    #shopify-section-template--19455591383315__main {
+      
+      --collection-items-per-row-compact: 4;
+      --collection-items-per-row-medium: 3;
+      --collection-items-per-row-large: 2;
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    #shopify-section-template--19455591383315__main {--collection-items-per-row-compact: 6;
+        --collection-items-per-row-medium: 4;
+        --collection-items-per-row-large: 3;}
+
+    #shopify-section-template--19455591383315__main .collection {}
+  }
+
+  @media screen and (min-width: 1400px) {
+    #shopify-section-template--19455591383315__main {}
+  }
+</style><div class="container">
+  <div class="v-stack gap-6 sm:gap-12"><height-observer variable="collection-toolbar" class="collection-toolbar full-bleed">
+          <div class="collection-toolbar__button-list"><div class="collection-toolbar__button-container ">
+                <button type="button" aria-controls="facets-drawer" class="collection-toolbar__button heading text-xxs w-full">Фільтр </button>
+              </div><div class="collection-toolbar__button-container">
+                <button type="button" aria-controls="sort-by-popover" class="collection-toolbar__button heading text-xxs w-full" aria-haspopup="dialog" aria-expanded="false">
+                  <span class="text-with-icon justify-center">Сортувати за<svg aria-hidden="true" focusable="false" fill="none" width="10" class="icon icon-chevron-down" viewBox="0 0 10 10">
+      <path d="m1 3 4 4 4-4" stroke="currentColor" stroke-linecap="square"></path>
+    </svg></span>
+                </button>
+
+                <facets-sort-popover id="sort-by-popover" section-id="template--19455591383315__main" class="popover popover--bottom-end" close-on-listbox-select="" role="dialog" style="display: none; opacity: 0;">
+                  <p class="h4" slot="header">Сортувати за</p>
+
+                  <x-listbox class="popover__value-list" role="listbox" aria-activedescendant="option-929bd7e8-a194-4434-a79f-9440f22fec4d"><button type="button" class="popover-listbox__option group" role="option" value="manual" id="option-ed94b4c6-fb70-4d96-b5a5-e6d0c48c554f">
+                          <span class="reversed-link">Рекомендовані</span>
+                        </button><button type="button" class="popover-listbox__option group" role="option" value="best-selling" id="option-01107272-a4b5-482b-a84c-764d9f58f6b7">
+                          <span class="reversed-link">Найкращі продажі</span>
+                        </button><button type="button" class="popover-listbox__option group" role="option" value="title-ascending" aria-selected="true" id="option-929bd7e8-a194-4434-a79f-9440f22fec4d">
+                          <span class="reversed-link">За алфавітом AZ</span>
+                        </button><button type="button" class="popover-listbox__option group" role="option" value="title-descending" id="option-bfb6b93f-b879-4619-8b81-5952fd2595af">
+                          <span class="reversed-link">За алфавітом ЗА</span>
+                        </button><button type="button" class="popover-listbox__option group" role="option" value="price-ascending" id="option-6b9b9eb3-6880-4046-b376-5be8ca9020ff">
+                          <span class="reversed-link">Ціна від низької до високої</span>
+                        </button><button type="button" class="popover-listbox__option group" role="option" value="price-descending" id="option-4dba0e8c-5c43-4126-b7ab-8ffe77d8bb0c">
+                          <span class="reversed-link">Ціна від високої до низької</span>
+                        </button><button type="button" class="popover-listbox__option group" role="option" value="created-ascending" id="option-a8b06bf3-b413-4e56-ac5e-887422fef6d4">
+                          <span class="reversed-link">Дата від старого до нового</span>
+                        </button><button type="button" class="popover-listbox__option group" role="option" value="created-descending" id="option-fa99d6b6-790a-4043-b978-09e490697bf0">
+                          <span class="reversed-link">Дата від нового до старого</span>
+                        </button></x-listbox>
+                </facets-sort-popover>
+              </div></div><collection-layout-switch device="mobile" class="collection-toolbar__layout-switch-list sm:hidden" aria-controls="product-list-template--19455591383315__main">
+              <button type="button" value="large" class="collection-toolbar__button " aria-label="Switch to larger product images"><svg role="presentation" width="18" viewBox="0 0 18 18" fill="none">
+      <path fill="currentColor" d="M0 0h18v18H0z"></path>
+    </svg></button>
+              <button type="button" value="medium" class="collection-toolbar__button is-active" aria-label="Switch to smaller product images"><svg role="presentation" width="18" viewBox="0 0 18 18" fill="none">
+      <path fill="currentColor" d="M0 0h8v8H0zM0 10h8v8H0zM10 0h8v8h-8zM10 10h8v8h-8z"></path>
+    </svg></button>
+            </collection-layout-switch>
+
+            <collection-layout-switch device="desktop" class="collection-toolbar__layout-switch-list sm-max:hidden" aria-controls="product-list-template--19455591383315__main">
+              <button type="button" value="large" class="collection-toolbar__button is-active" aria-label="Switch to larger product images"><svg role="presentation" width="18" viewBox="0 0 18 18" fill="none">
+      <path fill="currentColor" d="M0 0h8v8H0zM0 10h8v8H0zM10 0h8v8h-8zM10 10h8v8h-8z"></path>
+    </svg></button>
+              <button type="button" value="medium" class="collection-toolbar__button" aria-label="Switch to smaller product images"><svg role="presentation" width="18" viewBox="0 0 18 18" fill="none">
+      <path fill="currentColor" d="M0 0h4v4H0zM0 7h4v4H0zM0 14h4v4H0zM7 0h4v4H7zM7 7h4v4H7zM7 14h4v4H7zM14 0h4v4h-4zM14 7h4v4h-4zM14 14h4v4h-4z"></path>
+    </svg></button>
+              <button type="button" value="compact" class="collection-toolbar__button" aria-label="Switch to compact product images"><svg role="presentation" width="18" viewBox="0 0 18 18" fill="none">
+      <path fill="currentColor" d="M0 0h18v2H0zm0 4h18v2H0zm0 4h18v2H0zm0 4h18v2H0zm0 4h18v2H0z"></path>
+    </svg></button>
+            </collection-layout-switch></height-observer><div class="collection"><facets-drawer id="facets-drawer" class="facets-drawer drawer drawer--sm " role="dialog" aria-modal="true">
+              <p class="h4" slot="header">Фільтри</p><form is="facets-form" section-id="template--19455591383315__main" method="GET" action="/uk/collections/all" class="facets"><input type="hidden" name="page" value=""><div class="accordion-list"><details class="accordion  group " is="accordion-disclosure" aria-expanded="false">
+  <summary><div class="accordion__toggle h6"><span class="text-with-icon gap-4">Доступність</span><svg aria-hidden="true" focusable="false" fill="none" width="10" class="group-expanded:rotate icon icon-chevron-down" viewBox="0 0 10 10">
+      <path d="m1 3 4 4 4-4" stroke="currentColor" stroke-linecap="square"></path>
+    </svg></div>
+  </summary>
+
+  <div class="accordion__content "><div class="checkbox-control">
+                <input id="facets-drawer-filter.v.availability" type="checkbox" class="switch" name="filter.v.availability" value="1">
+                <label for="facets-drawer-filter.v.availability" class="text-subdued">Лише в наявності</label>
+              </div></div>
+</details><details class="accordion  group " is="accordion-disclosure" aria-expanded="false">
+  <summary><div class="accordion__toggle h6"><span class="text-with-icon gap-4">Ціна</span><svg aria-hidden="true" focusable="false" fill="none" width="10" class="group-expanded:rotate icon icon-chevron-down" viewBox="0 0 10 10">
+      <path d="m1 3 4 4 4-4" stroke="currentColor" stroke-linecap="square"></path>
+    </svg></div>
+  </summary>
+
+  <div class="accordion__content ">
+<price-range class="price-range"><div class="range-group no-js:hidden" style="--range-min: 0.0%; --range-max: 100.0%">
+    <input type="range" aria-label="Від ціни" class="range" min="0" max="3400" step="34" value="0">
+    <input type="range" aria-label="До ціни" class="range" min="0" max="3400" step="34" value="3400">
+  </div>
+
+  <div class="input-group">
+    <label class="input-prefix text-sm">
+      <span class="prefix text-subdued">₴</span>
+      <input aria-label="Від ціни" class="field" type="number" inputmode="numeric" name="filter.v.price.gte" id="filter.v.price.gte" min="0" max="3400" step="34" placeholder="0" autocomplete="off">
+    </label>
+
+    <span class="text-subdued text-sm">до</span>
+
+    <label class="input-prefix text-sm">
+      <span class="prefix text-subdued">₴</span>
+      <input aria-label="До ціни" class="field" type="number" inputmode="numeric" name="filter.v.price.lte" id="filter.v.price.lte" min="0" max="3400" step="34" placeholder="3400" autocomplete="off">
+    </label>
+  </div>
+</price-range></div>
+</details></div>
+
+  <noscript style="display: block; margin-top: 20px;">
+<button type="button" class="button w-full" >Застосувати</button></noscript>
+</form><div slot="footer">
+<button type="button" class="button w-full" is="dialog-close-button">Застосувати</button></div>
+            </facets-drawer><div class="collection__main"><product-list id="product-list-template--19455591383315__main" class="product-list" collection-mobile-layout="medium" collection-desktop-layout="large"><product-card class="product-card" handle="lighter-case"><div class="product-card__figure"><a href="/uk/products/lighter-case" class="product-card__media" data-instant=""><img src="//sychstudio.com/cdn/shop/files/1copy_1.jpg?v=1686841738&amp;width=2000" alt="Leather lighter case necklace" srcset="//sychstudio.com/cdn/shop/files/1copy_1.jpg?v=1686841738&amp;width=200 200w, //sychstudio.com/cdn/shop/files/1copy_1.jpg?v=1686841738&amp;width=300 300w, //sychstudio.com/cdn/shop/files/1copy_1.jpg?v=1686841738&amp;width=400 400w, //sychstudio.com/cdn/shop/files/1copy_1.jpg?v=1686841738&amp;width=500 500w, //sychstudio.com/cdn/shop/files/1copy_1.jpg?v=1686841738&amp;width=600 600w, //sychstudio.com/cdn/shop/files/1copy_1.jpg?v=1686841738&amp;width=700 700w, //sychstudio.com/cdn/shop/files/1copy_1.jpg?v=1686841738&amp;width=800 800w, //sychstudio.com/cdn/shop/files/1copy_1.jpg?v=1686841738&amp;width=1000 1000w, //sychstudio.com/cdn/shop/files/1copy_1.jpg?v=1686841738&amp;width=1200 1200w, //sychstudio.com/cdn/shop/files/1copy_1.jpg?v=1686841738&amp;width=1400 1400w, //sychstudio.com/cdn/shop/files/1copy_1.jpg?v=1686841738&amp;width=1600 1600w, //sychstudio.com/cdn/shop/files/1copy_1.jpg?v=1686841738&amp;width=1800 1800w" width="2000" height="2000" loading="lazy" sizes="(max-width: 699px) calc(100vw / 2), (max-width: 999px) calc(100vw / 0 - 64px), calc((100vw - 96px) / 3 - (24px / 3 * 2))" class="product-card__image product-card__image--primary  aspect-square"><img src="//sychstudio.com/cdn/shop/files/2copy_1.jpg?v=1686841743&amp;width=2000" alt="Leather lighter case necklace" srcset="//sychstudio.com/cdn/shop/files/2copy_1.jpg?v=1686841743&amp;width=200 200w, //sychstudio.com/cdn/shop/files/2copy_1.jpg?v=1686841743&amp;width=300 300w, //sychstudio.com/cdn/shop/files/2copy_1.jpg?v=1686841743&amp;width=400 400w, //sychstudio.com/cdn/shop/files/2copy_1.jpg?v=1686841743&amp;width=500 500w, //sychstudio.com/cdn/shop/files/2copy_1.jpg?v=1686841743&amp;width=600 600w, //sychstudio.com/cdn/shop/files/2copy_1.jpg?v=1686841743&amp;width=700 700w, //sychstudio.com/cdn/shop/files/2copy_1.jpg?v=1686841743&amp;width=800 800w, //sychstudio.com/cdn/shop/files/2copy_1.jpg?v=1686841743&amp;width=1000 1000w, //sychstudio.com/cdn/shop/files/2copy_1.jpg?v=1686841743&amp;width=1200 1200w, //sychstudio.com/cdn/shop/files/2copy_1.jpg?v=1686841743&amp;width=1400 1400w, //sychstudio.com/cdn/shop/files/2copy_1.jpg?v=1686841743&amp;width=1600 1600w, //sychstudio.com/cdn/shop/files/2copy_1.jpg?v=1686841743&amp;width=1800 1800w" width="2000" height="2000" loading="lazy" class="product-card__image product-card__image--secondary" fetchpriority="low" sizes="(max-width: 699px) calc(100vw / 2), (max-width: 999px) calc(100vw / 0 - 64px), calc((100vw - 96px) / 3 - (24px / 3 * 2))"></a><form method="post" action="/uk/cart/add" id="product_form_8387873177875" accept-charset="UTF-8" class="shopify-product-form" enctype="multipart/form-data" is="product-form"><input type="hidden" name="form_type" value="product"><input type="hidden" name="utf8" value="✓"><input type="hidden" name="id" value="45510162186515">
+            <button type="submit" class="product-card__quick-add-button">
+              <span class="sr-only">Додати в кошик</span><svg aria-hidden="true" focusable="false" fill="none" width="12" class="icon icon-plus" viewBox="0 0 12 12">
+      <path d="M6 0v12M0 6h12" stroke="currentColor" stroke-width="1.4"></path>
+    </svg></button><input type="hidden" name="product-id" value="8387873177875"></form></div><div class="product-card__info empty:hidden"><div class="v-stack justify-items-center gap-2"><div class="v-stack justify-items-center gap-1"><a href="/uk/products/lighter-case" class="product-title h6 " data-instant="">КЕЙС ДЛЯ ЗАПАЛЬНИЧКИ</a><price-list class="price-list "><sale-price class="h6 text-subdued">
+        <span class="sr-only">Ціна зі знижкою</span><span class="money" data-currency-uah="₴1,900.00" data-currency-eur="&amp;euro;49.15 EUR" data-currency="EUR">€49.15 EUR</span></sale-price></price-list></div></div></div>
+</product-card><product-card class="product-card" handle="lighter-case-silver"><div class="product-card__figure"><a href="/uk/products/lighter-case-silver" class="product-card__media" data-instant=""><img src="//sychstudio.com/cdn/shop/files/IMG_8586.jpg?v=1686841843&amp;width=2000" alt="lighter case silver" srcset="//sychstudio.com/cdn/shop/files/IMG_8586.jpg?v=1686841843&amp;width=200 200w, //sychstudio.com/cdn/shop/files/IMG_8586.jpg?v=1686841843&amp;width=300 300w, //sychstudio.com/cdn/shop/files/IMG_8586.jpg?v=1686841843&amp;width=400 400w, //sychstudio.com/cdn/shop/files/IMG_8586.jpg?v=1686841843&amp;width=500 500w, //sychstudio.com/cdn/shop/files/IMG_8586.jpg?v=1686841843&amp;width=600 600w, //sychstudio.com/cdn/shop/files/IMG_8586.jpg?v=1686841843&amp;width=700 700w, //sychstudio.com/cdn/shop/files/IMG_8586.jpg?v=1686841843&amp;width=800 800w, //sychstudio.com/cdn/shop/files/IMG_8586.jpg?v=1686841843&amp;width=1000 1000w, //sychstudio.com/cdn/shop/files/IMG_8586.jpg?v=1686841843&amp;width=1200 1200w, //sychstudio.com/cdn/shop/files/IMG_8586.jpg?v=1686841843&amp;width=1400 1400w, //sychstudio.com/cdn/shop/files/IMG_8586.jpg?v=1686841843&amp;width=1600 1600w, //sychstudio.com/cdn/shop/files/IMG_8586.jpg?v=1686841843&amp;width=1800 1800w" width="2000" height="2000" loading="lazy" sizes="(max-width: 699px) calc(100vw / 2), (max-width: 999px) calc(100vw / 0 - 64px), calc((100vw - 96px) / 3 - (24px / 3 * 2))" class="product-card__image product-card__image--primary  aspect-square"><img src="//sychstudio.com/cdn/shop/files/IMG_8591.jpg?v=1686841850&amp;width=2000" alt="lighter case " srcset="//sychstudio.com/cdn/shop/files/IMG_8591.jpg?v=1686841850&amp;width=200 200w, //sychstudio.com/cdn/shop/files/IMG_8591.jpg?v=1686841850&amp;width=300 300w, //sychstudio.com/cdn/shop/files/IMG_8591.jpg?v=1686841850&amp;width=400 400w, //sychstudio.com/cdn/shop/files/IMG_8591.jpg?v=1686841850&amp;width=500 500w, //sychstudio.com/cdn/shop/files/IMG_8591.jpg?v=1686841850&amp;width=600 600w, //sychstudio.com/cdn/shop/files/IMG_8591.jpg?v=1686841850&amp;width=700 700w, //sychstudio.com/cdn/shop/files/IMG_8591.jpg?v=1686841850&amp;width=800 800w, //sychstudio.com/cdn/shop/files/IMG_8591.jpg?v=1686841850&amp;width=1000 1000w, //sychstudio.com/cdn/shop/files/IMG_8591.jpg?v=1686841850&amp;width=1200 1200w, //sychstudio.com/cdn/shop/files/IMG_8591.jpg?v=1686841850&amp;width=1400 1400w, //sychstudio.com/cdn/shop/files/IMG_8591.jpg?v=1686841850&amp;width=1600 1600w, //sychstudio.com/cdn/shop/files/IMG_8591.jpg?v=1686841850&amp;width=1800 1800w" width="2000" height="2000" loading="lazy" class="product-card__image product-card__image--secondary" fetchpriority="low" sizes="(max-width: 699px) calc(100vw / 2), (max-width: 999px) calc(100vw / 0 - 64px), calc((100vw - 96px) / 3 - (24px / 3 * 2))"></a><form method="post" action="/uk/cart/add" id="product_form_8387876258067" accept-charset="UTF-8" class="shopify-product-form" enctype="multipart/form-data" is="product-form"><input type="hidden" name="form_type" value="product"><input type="hidden" name="utf8" value="✓"><input type="hidden" name="id" value="45366961537299">
+            <button type="submit" class="product-card__quick-add-button">
+              <span class="sr-only">Додати в кошик</span><svg aria-hidden="true" focusable="false" fill="none" width="12" class="icon icon-plus" viewBox="0 0 12 12">
+      <path d="M6 0v12M0 6h12" stroke="currentColor" stroke-width="1.4"></path>
+    </svg></button><input type="hidden" name="product-id" value="8387876258067"></form></div><div class="product-card__info empty:hidden"><div class="v-stack justify-items-center gap-2"><div class="v-stack justify-items-center gap-1"><a href="/uk/products/lighter-case-silver" class="product-title h6 " data-instant="">КЕЙС ДЛЯ ЗАПАЛЬНИЧКИ</a><price-list class="price-list "><sale-price class="h6 text-subdued">
+        <span class="sr-only">Ціна зі знижкою</span><span class="money" data-currency-uah="₴1,100.00" data-currency-eur="&amp;euro;28.46 EUR" data-currency="EUR">€28.46 EUR</span></sale-price></price-list></div></div></div>
+</product-card><product-card class="product-card" handle="lighter-case-gold"><div class="product-card__figure"><a href="/uk/products/lighter-case-gold" class="product-card__media" data-instant=""><img src="//sychstudio.com/cdn/shop/files/IMG_8587.jpg?v=1686841793&amp;width=2000" alt="lighter case gold" srcset="//sychstudio.com/cdn/shop/files/IMG_8587.jpg?v=1686841793&amp;width=200 200w, //sychstudio.com/cdn/shop/files/IMG_8587.jpg?v=1686841793&amp;width=300 300w, //sychstudio.com/cdn/shop/files/IMG_8587.jpg?v=1686841793&amp;width=400 400w, //sychstudio.com/cdn/shop/files/IMG_8587.jpg?v=1686841793&amp;width=500 500w, //sychstudio.com/cdn/shop/files/IMG_8587.jpg?v=1686841793&amp;width=600 600w, //sychstudio.com/cdn/shop/files/IMG_8587.jpg?v=1686841793&amp;width=700 700w, //sychstudio.com/cdn/shop/files/IMG_8587.jpg?v=1686841793&amp;width=800 800w, //sychstudio.com/cdn/shop/files/IMG_8587.jpg?v=1686841793&amp;width=1000 1000w, //sychstudio.com/cdn/shop/files/IMG_8587.jpg?v=1686841793&amp;width=1200 1200w, //sychstudio.com/cdn/shop/files/IMG_8587.jpg?v=1686841793&amp;width=1400 1400w, //sychstudio.com/cdn/shop/files/IMG_8587.jpg?v=1686841793&amp;width=1600 1600w, //sychstudio.com/cdn/shop/files/IMG_8587.jpg?v=1686841793&amp;width=1800 1800w" width="2000" height="2000" loading="lazy" sizes="(max-width: 699px) calc(100vw / 2), (max-width: 999px) calc(100vw / 0 - 64px), calc((100vw - 96px) / 3 - (24px / 3 * 2))" class="product-card__image product-card__image--primary  aspect-square"><img src="//sychstudio.com/cdn/shop/files/IMG_8590.jpg?v=1686841798&amp;width=2000" alt="lighter case" srcset="//sychstudio.com/cdn/shop/files/IMG_8590.jpg?v=1686841798&amp;width=200 200w, //sychstudio.com/cdn/shop/files/IMG_8590.jpg?v=1686841798&amp;width=300 300w, //sychstudio.com/cdn/shop/files/IMG_8590.jpg?v=1686841798&amp;width=400 400w, //sychstudio.com/cdn/shop/files/IMG_8590.jpg?v=1686841798&amp;width=500 500w, //sychstudio.com/cdn/shop/files/IMG_8590.jpg?v=1686841798&amp;width=600 600w, //sychstudio.com/cdn/shop/files/IMG_8590.jpg?v=1686841798&amp;width=700 700w, //sychstudio.com/cdn/shop/files/IMG_8590.jpg?v=1686841798&amp;width=800 800w, //sychstudio.com/cdn/shop/files/IMG_8590.jpg?v=1686841798&amp;width=1000 1000w, //sychstudio.com/cdn/shop/files/IMG_8590.jpg?v=1686841798&amp;width=1200 1200w, //sychstudio.com/cdn/shop/files/IMG_8590.jpg?v=1686841798&amp;width=1400 1400w, //sychstudio.com/cdn/shop/files/IMG_8590.jpg?v=1686841798&amp;width=1600 1600w, //sychstudio.com/cdn/shop/files/IMG_8590.jpg?v=1686841798&amp;width=1800 1800w" width="2000" height="2000" loading="lazy" class="product-card__image product-card__image--secondary" fetchpriority="low" sizes="(max-width: 699px) calc(100vw / 2), (max-width: 999px) calc(100vw / 0 - 64px), calc((100vw - 96px) / 3 - (24px / 3 * 2))"></a><form method="post" action="/uk/cart/add" id="product_form_8387880419603" accept-charset="UTF-8" class="shopify-product-form" enctype="multipart/form-data" is="product-form"><input type="hidden" name="form_type" value="product"><input type="hidden" name="utf8" value="✓"><input type="hidden" name="id" value="45366969205011">
+            <button type="submit" class="product-card__quick-add-button">
+              <span class="sr-only">Додати в кошик</span><svg aria-hidden="true" focusable="false" fill="none" width="12" class="icon icon-plus" viewBox="0 0 12 12">
+      <path d="M6 0v12M0 6h12" stroke="currentColor" stroke-width="1.4"></path>
+    </svg></button><input type="hidden" name="product-id" value="8387880419603"></form></div><div class="product-card__info empty:hidden"><div class="v-stack justify-items-center gap-2"><div class="v-stack justify-items-center gap-1"><a href="/uk/products/lighter-case-gold" class="product-title h6 " data-instant="">КЕЙС ДЛЯ ЗАПАЛЬНИЧКИ</a><price-list class="price-list "><sale-price class="h6 text-subdued">
+        <span class="sr-only">Ціна зі знижкою</span><span class="money" data-currency-uah="₴1,100.00" data-currency-eur="&amp;euro;28.46 EUR" data-currency="EUR">€28.46 EUR</span></sale-price></price-list></div></div></div>
+</product-card><product-card class="product-card" handle="tobacco-pouch"><div class="product-card__figure"><a href="/uk/products/tobacco-pouch" class="product-card__media" data-instant=""><img src="//sychstudio.com/cdn/shop/files/5copy.jpg?v=1686841439&amp;width=2000" alt="Handmade Leather Tobacco pouch brown " srcset="//sychstudio.com/cdn/shop/files/5copy.jpg?v=1686841439&amp;width=200 200w, //sychstudio.com/cdn/shop/files/5copy.jpg?v=1686841439&amp;width=300 300w, //sychstudio.com/cdn/shop/files/5copy.jpg?v=1686841439&amp;width=400 400w, //sychstudio.com/cdn/shop/files/5copy.jpg?v=1686841439&amp;width=500 500w, //sychstudio.com/cdn/shop/files/5copy.jpg?v=1686841439&amp;width=600 600w, //sychstudio.com/cdn/shop/files/5copy.jpg?v=1686841439&amp;width=700 700w, //sychstudio.com/cdn/shop/files/5copy.jpg?v=1686841439&amp;width=800 800w, //sychstudio.com/cdn/shop/files/5copy.jpg?v=1686841439&amp;width=1000 1000w, //sychstudio.com/cdn/shop/files/5copy.jpg?v=1686841439&amp;width=1200 1200w, //sychstudio.com/cdn/shop/files/5copy.jpg?v=1686841439&amp;width=1400 1400w, //sychstudio.com/cdn/shop/files/5copy.jpg?v=1686841439&amp;width=1600 1600w, //sychstudio.com/cdn/shop/files/5copy.jpg?v=1686841439&amp;width=1800 1800w" width="2000" height="1700" loading="lazy" sizes="(max-width: 699px) calc(100vw / 2), (max-width: 999px) calc(100vw / 0 - 64px), calc((100vw - 96px) / 3 - (24px / 3 * 2))" class="product-card__image product-card__image--primary  aspect-square"><img src="//sychstudio.com/cdn/shop/files/2.jpg?v=1686841439&amp;width=2000" alt="Handmade Leather Tobacco pouch brown " srcset="//sychstudio.com/cdn/shop/files/2.jpg?v=1686841439&amp;width=200 200w, //sychstudio.com/cdn/shop/files/2.jpg?v=1686841439&amp;width=300 300w, //sychstudio.com/cdn/shop/files/2.jpg?v=1686841439&amp;width=400 400w, //sychstudio.com/cdn/shop/files/2.jpg?v=1686841439&amp;width=500 500w, //sychstudio.com/cdn/shop/files/2.jpg?v=1686841439&amp;width=600 600w, //sychstudio.com/cdn/shop/files/2.jpg?v=1686841439&amp;width=700 700w, //sychstudio.com/cdn/shop/files/2.jpg?v=1686841439&amp;width=800 800w, //sychstudio.com/cdn/shop/files/2.jpg?v=1686841439&amp;width=1000 1000w, //sychstudio.com/cdn/shop/files/2.jpg?v=1686841439&amp;width=1200 1200w, //sychstudio.com/cdn/shop/files/2.jpg?v=1686841439&amp;width=1400 1400w, //sychstudio.com/cdn/shop/files/2.jpg?v=1686841439&amp;width=1600 1600w, //sychstudio.com/cdn/shop/files/2.jpg?v=1686841439&amp;width=1800 1800w" width="2000" height="1700" loading="lazy" class="product-card__image product-card__image--secondary" fetchpriority="low" sizes="(max-width: 699px) calc(100vw / 2), (max-width: 999px) calc(100vw / 0 - 64px), calc((100vw - 96px) / 3 - (24px / 3 * 2))"></a><form method="post" action="/uk/cart/add" id="product_form_8387815014675" accept-charset="UTF-8" class="shopify-product-form" enctype="multipart/form-data" is="product-form"><input type="hidden" name="form_type" value="product"><input type="hidden" name="utf8" value="✓"><input type="hidden" name="id" value="45366869491987">
+            <button type="submit" class="product-card__quick-add-button">
+              <span class="sr-only">Додати в кошик</span><svg aria-hidden="true" focusable="false" fill="none" width="12" class="icon icon-plus" viewBox="0 0 12 12">
+      <path d="M6 0v12M0 6h12" stroke="currentColor" stroke-width="1.4"></path>
+    </svg></button><input type="hidden" name="product-id" value="8387815014675"></form></div><div class="product-card__info empty:hidden"><div class="v-stack justify-items-center gap-2"><div class="v-stack justify-items-center gap-1"><a href="/uk/products/tobacco-pouch" class="product-title h6 " data-instant="">КІСЕТ ДЛЯ ТЮТЮНУ</a><price-list class="price-list "><sale-price class="h6 text-subdued">
+        <span class="sr-only">Ціна зі знижкою</span><span class="money" data-currency-uah="₴3,400.00" data-currency-eur="&amp;euro;87.96 EUR" data-currency="EUR">€87.96 EUR</span></sale-price></price-list></div></div></div>
+</product-card><product-card class="product-card" handle="tobacco-pouch-1"><div class="product-card__figure"><a href="/uk/products/tobacco-pouch-1" class="product-card__media" data-instant=""><img src="//sychstudio.com/cdn/shop/files/4copy.jpg?v=1686841231&amp;width=2000" alt="Handmade Leather Tobacco pouch green" srcset="//sychstudio.com/cdn/shop/files/4copy.jpg?v=1686841231&amp;width=200 200w, //sychstudio.com/cdn/shop/files/4copy.jpg?v=1686841231&amp;width=300 300w, //sychstudio.com/cdn/shop/files/4copy.jpg?v=1686841231&amp;width=400 400w, //sychstudio.com/cdn/shop/files/4copy.jpg?v=1686841231&amp;width=500 500w, //sychstudio.com/cdn/shop/files/4copy.jpg?v=1686841231&amp;width=600 600w, //sychstudio.com/cdn/shop/files/4copy.jpg?v=1686841231&amp;width=700 700w, //sychstudio.com/cdn/shop/files/4copy.jpg?v=1686841231&amp;width=800 800w, //sychstudio.com/cdn/shop/files/4copy.jpg?v=1686841231&amp;width=1000 1000w, //sychstudio.com/cdn/shop/files/4copy.jpg?v=1686841231&amp;width=1200 1200w, //sychstudio.com/cdn/shop/files/4copy.jpg?v=1686841231&amp;width=1400 1400w, //sychstudio.com/cdn/shop/files/4copy.jpg?v=1686841231&amp;width=1600 1600w, //sychstudio.com/cdn/shop/files/4copy.jpg?v=1686841231&amp;width=1800 1800w" width="2000" height="1700" loading="lazy" sizes="(max-width: 699px) calc(100vw / 2), (max-width: 999px) calc(100vw / 0 - 64px), calc((100vw - 96px) / 3 - (24px / 3 * 2))" class="product-card__image product-card__image--primary  aspect-square"><img src="//sychstudio.com/cdn/shop/files/1.jpg?v=1686841231&amp;width=2000" alt="Handmade Leather Tobacco pouch green" srcset="//sychstudio.com/cdn/shop/files/1.jpg?v=1686841231&amp;width=200 200w, //sychstudio.com/cdn/shop/files/1.jpg?v=1686841231&amp;width=300 300w, //sychstudio.com/cdn/shop/files/1.jpg?v=1686841231&amp;width=400 400w, //sychstudio.com/cdn/shop/files/1.jpg?v=1686841231&amp;width=500 500w, //sychstudio.com/cdn/shop/files/1.jpg?v=1686841231&amp;width=600 600w, //sychstudio.com/cdn/shop/files/1.jpg?v=1686841231&amp;width=700 700w, //sychstudio.com/cdn/shop/files/1.jpg?v=1686841231&amp;width=800 800w, //sychstudio.com/cdn/shop/files/1.jpg?v=1686841231&amp;width=1000 1000w, //sychstudio.com/cdn/shop/files/1.jpg?v=1686841231&amp;width=1200 1200w, //sychstudio.com/cdn/shop/files/1.jpg?v=1686841231&amp;width=1400 1400w, //sychstudio.com/cdn/shop/files/1.jpg?v=1686841231&amp;width=1600 1600w, //sychstudio.com/cdn/shop/files/1.jpg?v=1686841231&amp;width=1800 1800w" width="2000" height="1700" loading="lazy" class="product-card__image product-card__image--secondary" fetchpriority="low" sizes="(max-width: 699px) calc(100vw / 2), (max-width: 999px) calc(100vw / 0 - 64px), calc((100vw - 96px) / 3 - (24px / 3 * 2))"></a><form method="post" action="/uk/cart/add" id="product_form_8387855417619" accept-charset="UTF-8" class="shopify-product-form" enctype="multipart/form-data" is="product-form"><input type="hidden" name="form_type" value="product"><input type="hidden" name="utf8" value="✓"><input type="hidden" name="id" value="45366937878803">
+            <button type="submit" class="product-card__quick-add-button">
+              <span class="sr-only">Додати в кошик</span><svg aria-hidden="true" focusable="false" fill="none" width="12" class="icon icon-plus" viewBox="0 0 12 12">
+      <path d="M6 0v12M0 6h12" stroke="currentColor" stroke-width="1.4"></path>
+    </svg></button><input type="hidden" name="product-id" value="8387855417619"></form></div><div class="product-card__info empty:hidden"><div class="v-stack justify-items-center gap-2"><div class="v-stack justify-items-center gap-1"><a href="/uk/products/tobacco-pouch-1" class="product-title h6 " data-instant="">КІСЕТ ДЛЯ ТЮТЮНУ</a><price-list class="price-list "><sale-price class="h6 text-subdued">
+        <span class="sr-only">Ціна зі знижкою</span><span class="money" data-currency-uah="₴3,400.00" data-currency-eur="&amp;euro;87.96 EUR" data-currency="EUR">€87.96 EUR</span></sale-price></price-list></div></div></div>
+</product-card><product-card class="product-card" handle="tobacco-pouch-black"><div class="product-card__figure"><a href="/uk/products/tobacco-pouch-black" class="product-card__media" data-instant=""><img src="//sychstudio.com/cdn/shop/files/6.jpg?v=1686841067&amp;width=2000" alt="Handmade Leather Tobacco pouch black" srcset="//sychstudio.com/cdn/shop/files/6.jpg?v=1686841067&amp;width=200 200w, //sychstudio.com/cdn/shop/files/6.jpg?v=1686841067&amp;width=300 300w, //sychstudio.com/cdn/shop/files/6.jpg?v=1686841067&amp;width=400 400w, //sychstudio.com/cdn/shop/files/6.jpg?v=1686841067&amp;width=500 500w, //sychstudio.com/cdn/shop/files/6.jpg?v=1686841067&amp;width=600 600w, //sychstudio.com/cdn/shop/files/6.jpg?v=1686841067&amp;width=700 700w, //sychstudio.com/cdn/shop/files/6.jpg?v=1686841067&amp;width=800 800w, //sychstudio.com/cdn/shop/files/6.jpg?v=1686841067&amp;width=1000 1000w, //sychstudio.com/cdn/shop/files/6.jpg?v=1686841067&amp;width=1200 1200w, //sychstudio.com/cdn/shop/files/6.jpg?v=1686841067&amp;width=1400 1400w, //sychstudio.com/cdn/shop/files/6.jpg?v=1686841067&amp;width=1600 1600w, //sychstudio.com/cdn/shop/files/6.jpg?v=1686841067&amp;width=1800 1800w" width="2000" height="1700" loading="lazy" sizes="(max-width: 699px) calc(100vw / 2), (max-width: 999px) calc(100vw / 0 - 64px), calc((100vw - 96px) / 3 - (24px / 3 * 2))" class="product-card__image product-card__image--primary  aspect-square"><img src="//sychstudio.com/cdn/shop/files/5.jpg?v=1686841067&amp;width=2000" alt="Handmade Leather Tobacco pouch black" srcset="//sychstudio.com/cdn/shop/files/5.jpg?v=1686841067&amp;width=200 200w, //sychstudio.com/cdn/shop/files/5.jpg?v=1686841067&amp;width=300 300w, //sychstudio.com/cdn/shop/files/5.jpg?v=1686841067&amp;width=400 400w, //sychstudio.com/cdn/shop/files/5.jpg?v=1686841067&amp;width=500 500w, //sychstudio.com/cdn/shop/files/5.jpg?v=1686841067&amp;width=600 600w, //sychstudio.com/cdn/shop/files/5.jpg?v=1686841067&amp;width=700 700w, //sychstudio.com/cdn/shop/files/5.jpg?v=1686841067&amp;width=800 800w, //sychstudio.com/cdn/shop/files/5.jpg?v=1686841067&amp;width=1000 1000w, //sychstudio.com/cdn/shop/files/5.jpg?v=1686841067&amp;width=1200 1200w, //sychstudio.com/cdn/shop/files/5.jpg?v=1686841067&amp;width=1400 1400w, //sychstudio.com/cdn/shop/files/5.jpg?v=1686841067&amp;width=1600 1600w, //sychstudio.com/cdn/shop/files/5.jpg?v=1686841067&amp;width=1800 1800w" width="2000" height="1700" loading="lazy" class="product-card__image product-card__image--secondary" fetchpriority="low" sizes="(max-width: 699px) calc(100vw / 2), (max-width: 999px) calc(100vw / 0 - 64px), calc((100vw - 96px) / 3 - (24px / 3 * 2))"></a><form method="post" action="/uk/cart/add" id="product_form_8387857973523" accept-charset="UTF-8" class="shopify-product-form" enctype="multipart/form-data" is="product-form"><input type="hidden" name="form_type" value="product"><input type="hidden" name="utf8" value="✓"><input type="hidden" name="id" value="45366940860691">
+            <button type="submit" class="product-card__quick-add-button">
+              <span class="sr-only">Додати в кошик</span><svg aria-hidden="true" focusable="false" fill="none" width="12" class="icon icon-plus" viewBox="0 0 12 12">
+      <path d="M6 0v12M0 6h12" stroke="currentColor" stroke-width="1.4"></path>
+    </svg></button><input type="hidden" name="product-id" value="8387857973523"></form></div><div class="product-card__info empty:hidden"><div class="v-stack justify-items-center gap-2"><div class="v-stack justify-items-center gap-1"><a href="/uk/products/tobacco-pouch-black" class="product-title h6 " data-instant="">КІСЕТ ДЛЯ ТЮТЮНУ</a><price-list class="price-list "><sale-price class="h6 text-subdued">
+        <span class="sr-only">Ціна зі знижкою</span><span class="money" data-currency-uah="₴3,400.00" data-currency-eur="&amp;euro;87.96 EUR" data-currency="EUR">€87.96 EUR</span></sale-price></price-list></div></div></div>
+</product-card></product-list></div></div></div>
+</div>
+
+</section><section id="shopify-section-template--19455591383315__b2d469e0-3613-4dfe-a0f0-6462750405ac" class="shopify-section shopify-section--rich-text"><div class="section-spacing bordered-section">
+    <div class="container container--sm">
+      <div class="prose text-center"><div><p>Leather pouch for tobacco. You will roll it faster and more conveniently than before! Completely handmade.</p></div></div>
+    </div>
+  </div></section>
+    </main> -->

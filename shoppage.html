@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.html">
+    <link rel="stylesheet" href="contact.html">
+    <link rel="stylesheet" href="account.html">
+    <link rel="stylesheet" href="index.html">
+
+</head>
+<body>
+
+    <header class="all-header">
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+            <ul class="menu__box">
+              <li><a class="menu__item" href="index.html">Home</a></li>
+              <li><a class="menu__item" href="shoppage.html">Shop</a></li>
+              <li><a class="menu__item" href="contact.html">Contact</a></li>
+              <li><a class="menu__item" href="account.html">Account</a></li>
+            <div class="knopky">
+                <nav class="menu-bottom" aria-expanded="false">
+                <select class="currency-two">
+                    <li> <option value="UAH" class="menu__item">UAH</option></li>
+                    <li> <option value="USD" selected class="menu__item">USD</option></li>
+                    <li> <option value="EUR" class="menu__item">EUR</option></li>
+                </nav>
+                </select>
+    
+                <div class="menu-bottom">
+                <select class="currency-two">
+                    <li>  <option value="UKR" class="menu__item">UKR</option></li>
+                    <li>  <option value="ENG" selected class="menu__item">ENG</option></li>
+                </select>
+                </div>
+            </div>
+            </ul>
+        </div>
+        <nav class="header-first">
+            <ul>
+                <li class="header-first-item" title="Home">
+                    <a href="index.html">HOME</a>
+                </li>
+                <li class="header-first-item" title="SHOP">
+                    <a href="shoppage.html">SHOP</a>
+                </li>
+                <li class="header-first-item" title="CONTACT">
+                    <a href="contact.html">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="logo">
+            <h1>
+                <a href="index.html">
+                    kvitka.perfumes
+                </a>
+            </h1>
+        </section>
+
+        <nav class="header-second" aria-expanded="false">
+            <select class="currency">
+                <option value="UAH">UAH</option>
+                <option value="USD" selected>USD</option>
+                <option value="EUR">EUR</option>
+            </select>
+
+            <div class="language-dropdown">
+                <select class="currency">
+                    <option value="UKR">UKR</option>
+                    <option value="ENG" selected>ENG</option>
+                </select>
+            </div>
+
+            <a href="account.html" class="icon-acc">
+                <svg aria-hidden="true" fill="none" focusable="false" width="24" class="header__icon-account"
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M16.125 8.75c-.184 2.478-2.063 4.5-4.125 4.5s-3.944-2.021-4.125-4.5c-.187-2.578 1.64-4.5 4.125-4.5 2.484 0 4.313 1.969 4.125 4.5Z"
+                        stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path
+                        d="M3.017 20.747C3.783 16.5 7.922 14.25 12 14.25s8.217 2.25 8.984 6.497"
+                        stroke="currentColor" stroke-width="1.4" stroke-miterlimit="10"></path>
+                </svg>
+            </a>
+
+            <a href="search.png" class="icon-srh">
+                <svg aria-hidden="true" fill="none" focusable="false" width="24" class="header__icon-search"
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M10.364 3a7.364 7.364 0 1 0 0 14.727 7.364 7.364 0 0 0 0-14.727Z"
+                        stroke="currentColor" stroke-width="1.4" stroke-miterlimit="10">
+                    </path>
+                    <path
+                        d="M15.857 15.858 21 21.001"
+                        stroke="currentColor" stroke-width="1.4" stroke-miterlimit="10" stroke-linecap="round">
+                    </path>
+                </svg>
+            </a>
+
+            <a href="shoppage.html" class="relative" aria-controls="cart-drawer">
+                <svg aria-hidden="true" fill="none" focusable="false" width="24" class="header__icon-cart"
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M2 10h20l-4 11H6L2 10Zm14-3a4 4 0 0 0-8 0"
+                        stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                    </path>
+                </svg>
+                <cart-dot class="header__cart-dot"></cart-dot>
+            </a>
+        </nav>
+    </header>
+    
+<main class="shop-main">
+    <div class="product-list">
+
+        <div class="tree-parfumes">
+            <div class="product-card">
+                <img src="shop-1.jpg" class="shop-img" alt="Product 1">
+                <h3>Tom Ford<br>
+                    BITTER PITCH</h3>
+                <p class="price"> ₴1000</p>
+                <button class="add-to-cart">Add to cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="shop-2.jpg" class="shop-img" alt="Product 2">
+                <h3>Tom Ford<br>
+                    SOLEIL NEIGE</h3>
+                <p class="price"> ₴800</p>
+                <button class="add-to-cart">Add to cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="shop-3.jpg"  class="shop-img" alt="Product 1">
+                <h3>Tom Ford<br>
+                    LOST CHERRY</h3>
+                <p class="price"> ₴1000</p>
+                <button class="add-to-cart">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="sec-tree-parfumes">
+            <div class="product-card">
+                <img src="shop-4.jpg" class="shop-img"  alt="Product 2">
+                <h3>CHANELL<br>
+                    SYCOMORE</h3>
+                <p class="price"> ₴800</p>
+                <button class="add-to-cart">Add to cart</button>
+            </div>
+            <div class="product-card">
+                <img src="shop-5.jpg"  class="shop-img" alt="Product 1">
+                <h3>CHANELL<br>
+                    1957</h3>
+                <p class="price"> ₴1000</p>
+                <button class="add-to-cart">Add to cart</button>
+            </div>
+            <div class="product-card">
+                <img src="shop-6.jpg" class="shop-img"  alt="Product 2">
+                <h3>CHANELL<br>
+                    EAU DE COLOGNE</h3>
+                <p class="price"> ₴800</p>
+                <button class="add-to-cart">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="last-tree-parfumes">
+            <div class="product-card">
+                <img src="shop-7.jpg"  class="shop-img" alt="Product 1">
+                <h3>GUCCI <br>
+                    BLOOM</h3>
+                <p class="price"> ₴1000</p>
+                <button class="add-to-cart">Add to cart</button>
+            </div>
+            <div class="product-card">
+                <img src="shop-8.jpg"  class="shop-img" alt="Product 2">
+                <h3>GUCCI<br>
+                    BLOOM PROFUMO DI FIORI,</h3>
+                <p class="price"> ₴800</p>
+                <button class="add-to-cart">Add to cart</button>
+            </div>
+            <div class="product-card">
+                <img src="shop-9.jpg" class="shop-img" alt="Product 2">
+                <h3>GUCCI<br> 
+                    BLOOM AMBROSIA DI FIORI</h3>
+                <p class="price">₴800</p>
+                <button class="add-to-cart">Add to cart</button>
+            </div>
+        </div>
+    </div>
+            <hr class="main-shop-line">
+</main>
+
+
+<footer>
+    <section class="all-footer">
+    <section class="two-footer">
+        <section class="footer-one">
+            <ul class="info">
+                <h4 class="foot-zag"> INFORMATION</h4>
+            
+                <li><a href="/uk/search" class="points-info">Search</a></li>
+                <li><a href="/uk/pages/about-us"class="points-info">About us</a></li>
+                <li><a href="/uk/pages/faq" class="points-info">FAQ</a></li>
+                <li><a href="/uk/pages/contact" class="points-info">Contact us</a></li>
+            </ul>
+        </section>
+        <section class="footer-two"> 
+            <ul class="menu">
+                <h4 class="foot-zag">LEGAL MENU</h4>
+           
+                <li><a href="/uk/policies/privacy-policy" class="points-menu">Privacy Policy</a></li>
+                <li><a href="/uk/policies/refund-policy" class="points-menu">Refund policy</a></li>
+                <li><a href="/uk/policies/shipping-policy" class="points-menu">Shipping Policy</a></li>
+                <li><a href="/uk/policies/terms-of-service" class="points-menu">Tearms of Service</a></li>
+            </ul>
+        </section> 
+     
+        <section class="footer-tree">
+            <ul class="links">
+                <h4 class="foot-zag">QUICK LINKS</h4>
+           
+                <li><a href="/uk" class="points-links">Home page</a></li>
+                <li><a href="/uk/collections" class="points-links">All collections</a></li>
+                <li><a href="/uk/collections/all" class="points-links">All products</a></li>
+                <li><a href="https://aa0511-3.myshopify.com/sitemap.xml" class="points-links">SiteMap</a></li>
+            </ul>
+        </section>
+        
+        <section class="news">
+            <h4 class="NEWSLETTER">NEWSLETTER</h4>
+            <p class="text-email" >Sign up to our newsletter to receive<br>
+                 exclusive offers.
+            </p>
+        
+            <form action="" method="post" accept-charset="UTF-8" class="form">
+                <label for="EMAIL"></label>
+                <input type="email" id="EMAIL" name="contact[email]" placeholder="Email" autocomplete="email" required>
+                <input type="submit" value="sign up" class="submit">
+            </form>
+        </section>
+    </section>
+    </section>
+</footer>
+    <hr class="footer-line">
+</body>

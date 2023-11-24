@@ -12,7 +12,7 @@
 </head>
 <body>
 
-    <header class="all-header">
+<header class="all-header">
         <div class="hamburger-menu">
             <input id="menu__toggle" type="checkbox" />
             <label class="menu__btn" for="menu__toggle">
@@ -114,7 +114,7 @@
                 <cart-dot class="header__cart-dot"></cart-dot>
             </a>
         </nav>
-    </header>
+</header>
     
 <main class="shop-main">
     <div class="product-list">
@@ -123,74 +123,110 @@
             <div class="product-card">
                 <img src="shop-1.jpg" class="shop-img" alt="Product 1">
                 <h3>Tom Ford<br>
-                    BITTER PITCH</h3>
-                <p class="price"> ₴1000</p>
-                <button class="add-to-cart">Add to cart</button>
+                    BITTER PITCH
+                </h3>
+                <div class="price" onmouseover="changeColor('price1')" onmouseout="resetColor('price1')">
+                        <span>$1050</span>
+                </div>
+                <!-- Додайте атрибути data-product та data-price для передачі параметрів функції addToCart -->
+                <input type="submit" class="add-to-cart" value="Add to cart" data-product="Tom Ford BITTER PITCH" data-price="1050" onclick="addToCart('Tom Ford BITTER PITCH', 1050)">
             </div>
 
             <div class="product-card">
                 <img src="shop-2.jpg" class="shop-img" alt="Product 2">
                 <h3>Tom Ford<br>
-                    SOLEIL NEIGE</h3>
-                <p class="price"> ₴800</p>
-                <button class="add-to-cart">Add to cart</button>
+                    SOLEIL NEIGE
+                </h3>
+                <div class="price" onmouseover="changeColor('price1')" onmouseout="resetColor('price1')">
+                    <span>$1050</span>
+                </div>
+                <input type="submit" class="add-to-cart" value="Add to cart">
             </div>
 
             <div class="product-card">
                 <img src="shop-3.jpg"  class="shop-img" alt="Product 1">
                 <h3>Tom Ford<br>
-                    LOST CHERRY</h3>
-                <p class="price"> ₴1000</p>
-                <button class="add-to-cart">Add to cart</button>
+                    LOST CHERRY
+                </h3>
+                <div class="price" onmouseover="changeColor('price1')" onmouseout="resetColor('price1')">
+                    <span>$1050</span>
+                </div>
+                <input type="submit" class="add-to-cart" value="Add to cart">
             </div>
         </div>
 
         <div class="sec-tree-parfumes">
+
             <div class="product-card">
                 <img src="shop-4.jpg" class="shop-img"  alt="Product 2">
                 <h3>CHANELL<br>
-                    SYCOMORE</h3>
-                <p class="price"> ₴800</p>
-                <button class="add-to-cart">Add to cart</button>
+                    SYCOMORE
+                </h3>
+                <div class="price" onmouseover="changeColor('price1')" onmouseout="resetColor('price1')">
+                    <span>$1050</span>
+                </div>
+                <input type="submit" class="add-to-cart" value="Add to cart">
             </div>
+
             <div class="product-card">
                 <img src="shop-5.jpg"  class="shop-img" alt="Product 1">
                 <h3>CHANELL<br>
-                    1957</h3>
-                <p class="price"> ₴1000</p>
-                <button class="add-to-cart">Add to cart</button>
+                    1957
+                </h3>
+                <div class="price" onmouseover="changeColor('price1')" onmouseout="resetColor('price1')">
+                    <span>$1050</span>
+                </div>
+                <input type="submit" class="add-to-cart"  value="Add to cart">
             </div>
+
             <div class="product-card">
                 <img src="shop-6.jpg" class="shop-img"  alt="Product 2">
                 <h3>CHANELL<br>
-                    EAU DE COLOGNE</h3>
-                <p class="price"> ₴800</p>
-                <button class="add-to-cart">Add to cart</button>
+                    EAU DE COLOGNE
+                </h3>
+                <div class="price" onmouseover="changeColor('price1')" onmouseout="resetColor('price1')">
+                    <span>$1050</span>
+                </div>
+                <input type="submit" class="add-to-cart" value="Add to cart">
             </div>
+
         </div>
 
         <div class="last-tree-parfumes">
+
             <div class="product-card">
                 <img src="shop-7.jpg"  class="shop-img" alt="Product 1">
                 <h3>GUCCI <br>
-                    BLOOM</h3>
-                <p class="price"> ₴1000</p>
-                <button class="add-to-cart">Add to cart</button>
+                    BLOOM
+                </h3>
+                <div class="price" onmouseover="changeColor('price1')" onmouseout="resetColor('price1')">
+                    <span>$1050</span>
+                </div>
+                <input type="submit" class="add-to-cart" value="Add to cart">
             </div>
+
             <div class="product-card">
                 <img src="shop-8.jpg"  class="shop-img" alt="Product 2">
                 <h3>GUCCI<br>
-                    BLOOM PROFUMO DI FIORI,</h3>
-                <p class="price"> ₴800</p>
-                <button class="add-to-cart">Add to cart</button>
+                    BLOOM PROFUMO DI FIORI
+                </h3>
+                <div class="price" onmouseover="changeColor('price1')" onmouseout="resetColor('price1')">
+                    <span>$1050</span>
+                </div>
+                <input type="submit" class="add-to-cart"  value="Add to cart">
             </div>
+
             <div class="product-card">
                 <img src="shop-9.jpg" class="shop-img" alt="Product 2">
                 <h3>GUCCI<br> 
-                    BLOOM AMBROSIA DI FIORI</h3>
-                <p class="price">₴800</p>
-                <button class="add-to-cart">Add to cart</button>
+                    BLOOM AMBROSIA DI FIORI
+                </h3>
+                <div class="price" onmouseover="changeColor('price1')" onmouseout="resetColor('price1')">
+                    <span>$1050</span>
+                </div>
+                <input type="submit" class="add-to-cart" value="Add to cart">
             </div>
+            
         </div>
     </div>
             <hr class="main-shop-line">

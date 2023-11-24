@@ -95,9 +95,7 @@
     right: -1rem;
     box-shadow: -2px 0px 5px 0px rgba(217, 217, 217, 1);
 }
-
-
-/* Стилі для маленьких екранів (наприклад, мобільних пристроїв) */
+/* Стилі для маленьких екранів хедера (наприклад, мобільних пристроїв) */
 @media (max-width: 950px) {
     .all-header {
         flex-direction: row; /* Шапка стане вертикальною на малих екранах */
@@ -143,10 +141,8 @@
     }
 
 }
-
-
-
 /* main */
+
 .image-section {
     width: 100%;
     height: auto;
@@ -668,7 +664,7 @@ footer h4{
 }
 
 
-
+/* shop styles */
 .shop-main {
     font-family: Inter;
     display: flex;
@@ -682,7 +678,7 @@ h3{
     font-family: Inter;
     font-weight: 300;
     font-size: 17px;
-    padding-bottom: 5px;
+    padding-bottom: 7px;
 }
 .product-list {
     display: flex;
@@ -698,17 +694,42 @@ h3{
     justify-content: space-around;
 
 }
+/* .product-card {
+    text-align: center;
+    
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #cccccc00;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 5px;
+    align-items: center;
+} */
 
 .product-card {
     text-align: center;
     margin: 10px;
     padding: 10px;
     border: 1px solid #cccccc00;
-    border-radius: 5px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     padding-bottom: 5px;
+    align-items: center;
+  background-position: -100% 0;
+    color: black;
+}
+.product-card:hover{
+
+
+
+    background: linear-gradient(to right, #605f5f8a 50%, #735f5f00 50%);
+    color: #000000;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: background-position 0.3s cubic-bezier(0, 0, 0, -0.16);
+    background-size: 200% 100%;
 }
 
 .product-card img {
@@ -716,30 +737,36 @@ h3{
     height: auto;
     object-fit: contain;
 }
-  
+
 
 .price {
     font-weight: 200;
-    padding-bottom: 5px;
+    padding-bottom: 7px;
     font-size:20px;
 
 }
 
 .add-to-cart {
-    background-color: #00000000;
-    color: rgb(0, 0, 0);
-    border: none;
-    text-align: center;
-    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 38px;
     font-family: Inter;
-    font-size: 14px;
-    font-weight: 300;
+    font-size: 15px;
+    font-weight: 200;
+    background: linear-gradient(to right, black 50%, white 50%);
+    color: white;
+    border: 1px solid black;
     cursor: pointer;
-    border-radius: 5px;
+    transition: background-position 0.3s linear;
+    background-size: 200% 100%;
+    flex-wrap: wrap;
 }
 
 .add-to-cart:hover {
-    background-color: #45a04900;
+    background-position: -100% 0;
+    color: black;
 }
 
 .main-shop-line {
@@ -791,7 +818,6 @@ p {
     align-items: center;
     justify-items:center;
 }
-
 #name-container,
 #email-container,
 #message-container {
@@ -918,50 +944,59 @@ p {
 
 }
 @media screen and (max-width:676px) {
-.main-contact{
-    margin-top:9%;
-}
-       p {
-       margin-bottom: 11px;
-       font-size: 15px;
-   }
-   #name-container,
-   #email-container,
-   #message-container {
-       margin-bottom: 13px;
-   }
-   
-   #name {
-       width: 100px;
-       height: 25px;
-   }
-   
-   #email {
-      min-width: 150px;
-       height: 28px;
-   }
-   #message {
-       min-width: 268px;
-       height: 60px;
-   }
+    .main-contact{
+        margin-top:9%;
+    }
+           p {
+           margin-bottom: 11px;
+           font-size: 15px;
+       }
+       #name-container,
+       #email-container,
+       #message-container {
+           margin-bottom: 13px;
+           
+       }
        
-   
-   .submit-contact input {
-       font-family: Inter;
-       font-size: 13px;
-       font-weight: 200;
-       width: 120px;
-       height: 38px;
-       background: linear-gradient(to right, black 50%, white 50%);
-       color: white;
-       border: 1px solid black;
-       cursor: pointer;
-       transition: background-position 0.3s linear;
-       background-size: 200% 100%;
-   }
-   
-   .submit-contact input:hover {
-       background-position: -100% 0;
-       color: black;
-   }
-   }
+       #name {
+           width: 100px;
+           height: 15px
+       }
+       
+       #email {
+          min-width: 150px;
+          height: 18px;
+       }
+       #message {
+           min-width: 268px;
+           height: 60px;
+       }
+           
+       
+       .submit-contact input {
+           font-family: Inter;
+           font-size: 13px;
+           font-weight: 200;
+           width: 120px;
+           height: 28px;
+           background: linear-gradient(to right, black 50%, white 50%);
+           color: white;
+           border: 1px solid black;
+           cursor: pointer;
+           transition: background-position 0.3s linear;
+           background-size: 200% 100%;
+       }
+       
+       .submit-contact input:hover {
+           background-position: -100% 0;
+           color: black;
+       }
+       }
+    
+    
+    
+    
+    
+    
+    
+       

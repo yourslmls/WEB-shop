@@ -921,8 +921,6 @@ p {
     min-width: 518px;
     height: 130px;
 }
-    
-
 .submit-contact input {
     font-family: Inter;
     font-size: 25px;
@@ -936,12 +934,10 @@ p {
     transition: background-position 0.3s linear;
     background-size: 200% 100%;
 }
-
 .submit-contact input:hover {
     background-position: -100% 0;
     color: black;
 }
-
 }
 @media screen and (max-width:676px) {
     .main-contact{
@@ -957,7 +953,6 @@ p {
            margin-bottom: 13px;
            
        }
-       
        #name {
            width: 100px;
            height: 15px
@@ -971,8 +966,6 @@ p {
            min-width: 268px;
            height: 60px;
        }
-           
-       
        .submit-contact input {
            font-family: Inter;
            font-size: 13px;
